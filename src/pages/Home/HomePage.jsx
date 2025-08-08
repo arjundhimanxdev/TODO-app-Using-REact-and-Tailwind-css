@@ -3,7 +3,8 @@ import TodoWrapper from "./components/TodoWrapper";
 
 function HomePage() {
   return (
-    <div>
+    <div className="">
+        
       <TodoWrapper />
     </div>
   );

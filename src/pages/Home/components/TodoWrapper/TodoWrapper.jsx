@@ -56,11 +56,11 @@ function TodoWrapper() {
   const completedCount = todos.filter((todo) => todo.completed).length;
 
   return (
-    <div className="max-w-xl mx-auto mt-10 px-4">
+    <div className=" flex flex-col justify-center items-center mt-10 py-3">
       
       <TodoForm addTodo={addTodo} />
 
-      <div className="w-full mt-4">
+      <div className="w-full mt-4 flex flex-col justify-center items-center">
         {/* Status Count + Clear Completed */}
         <div className="flex bg-blue-6-- py-2 px-5 rounded-md shadow-[10px_16px_22px_rgba(0,4,4,0.2)] mt-8 justify-between md:w-[60%] w-full">
          <span>
@@ -76,7 +76,7 @@ function TodoWrapper() {
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex bg-gray-200 py-2 px-5 rounded-md shadow-[30px_40px_50px_rgba(0,4,14,0.3)] mt-4 justify-between w-full md:w-[60%] ">
+        <div className="flex items-center w-full md:w-[60%] bg-gray-200 py-2 px-5 rounded-md shadow-[30px_40px_50px_rgba(0,4,14,0.3)] mt-4 justify-between ">
           <button
             className={`w-[33%] text-center px-4 py-1.5 rounded cursor-pointer peer-checked/all:bg-blue-500 peer-checked/all:text-white text-black ${
               filter === "All" ? "bg-blue-500 text-white" : " "
